@@ -34,26 +34,17 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-*${s.BOT} AVAILABLE MENUS* 
-╭─────────────────✣
-│❒⁠⁠⁠⁠╭─────────────✣
-│❒⁠⁠⁠⁠│▸ *MENU1* 
-│❒⁠⁠⁠⁠│▸ *MENU2* 
-│❒⁠⁠⁠⁠│▸ *MENU3*
-│❒⁠⁠⁠⁠╰──────────────✇
-│❒⁠⁠⁠⁠│▸ *PLUGINS* : ${cm.length} 
-│❒⁠⁠⁠⁠│▸ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│❒⁠⁠⁠⁠│▸ *SAVER* : ${os.platform()}
-│❒⁠⁠⁠⁠│▸ *THEME* : *BELTAH KE*
-│❒⁠⁠⁠⁠╰──────────────✇
-╰──────────────────✇
-> 𝐁𝐄𝐋𝐓𝐀𝐇-𝐌𝐃 𝐕𝟒.𝟎.𝟎 𝐋𝐀𝐓𝐄𝐒𝐓
-> 𝐏𝐎𝐖𝐄𝐑𝐄𝐃 𝐁𝐘 𝐁𝐄𝐋𝐓𝐀𝐇 𝐓𝐄𝐂𝐇\n${readmore}`;
+*BEST CODER MD MENUS* 
+
+    ▸ *PLUGINS* : ${cm.length} 
+    ▸*RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+    ▸*SAVER* : ${os.platform()}
+    ▸ *THEME* : *joel tech
+> BEST CODER MD 
+> made by joel tech \n${readmore}`;
     
 let menuMsg = `
-> Hello ${nomAuteurMessage},,, Type menu1,menu2 or menu3 to access a list of commands. 
-  
-╰───────────────────⏣`;
+> type menu1,menu2,menu3,made by joel tech`;
 
    var lien = mybotpic();
 
