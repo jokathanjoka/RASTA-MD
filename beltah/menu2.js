@@ -45,7 +45,7 @@ const date = moment().format('DD/MM/YYYY');
     ▸ *storage* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
     ▸ *running time* : ${os.platform()}
     ▸ *theme* : *joel_tech*
->🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿🇹🇿
+>🇹🇿
 >powered by joel kang'oma \n${readmore}`;
     
 let menuMsg = `
@@ -63,7 +63,7 @@ let menuMsg = `
 ╰────────────···▸▸ \n`
     }
 
-    menuMsg += `> BEST CODER MD 🇹🇿
+    menuMsg += `> powered by joel kang'oma 
 `;
 
    var lien = mybotpic();
@@ -80,7 +80,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *joel*, déveloper joel Tech" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
