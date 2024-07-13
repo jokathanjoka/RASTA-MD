@@ -34,23 +34,22 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-*BEST CODER MD MENUS* 
-
-    ▸ *PLUGINS* : ${cm.length} 
-    ▸*RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-    ▸*SAVER* : ${os.platform()}
-    ▸ *THEME* : *joel tech
-> BEST CODER MD 
-> made by joel tech \n${readmore}`;
-    
-let menuMsg = `
-> type menu1,menu2,menu3,made by joel tech`;
+*${s.BOT} AVAILABLE MENU* 
+     
+     *PLUGINS* : ${cm.length} 
+     *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+     *SAVER* : ${os.platform()}
+     *theme* : *joel_it🕸️🕷️*
+*developer* : *joel _it🕸️🕸️🕷️
+ type menu1,menu2,menu3 to open bot menus
+ > powered by joel tech
+╰───────────────────⏣`;
 
    var lien = mybotpic();
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *joel_it🕷️🕸️*, joel_it🕸️🕷️" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -60,7 +59,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *best coder md*, déveloper joel tech" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
