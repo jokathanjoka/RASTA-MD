@@ -36,12 +36,13 @@ const date = moment().format('DD/MM/YYYY');
   let infoMsg =  `
 *${s.BOT} AVAILABLE MENUS* 
 
-    ▸ *PLUGINS* : infinite 
+    ▸ *PLUGINS* : ${cm.length} 
     ▸ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
     ▸ *SAVER* : ${os.platform()}
-    ▸ *THEME* : *joel tech
-> BEST CODER MD 
-> powered by joel kang'oma \n${readmore}`;
+    ▸ *THEME* : *joel tech*
+
+> Best codermd
+> powered by joel tech \n${readmore}`;
     
 let menuMsg = `
 > Hello ${nomAuteurMessage},,, Type menu1,menu2 or menu3 to access a list of commands. 
@@ -52,7 +53,7 @@ let menuMsg = `
 
    if (lien.match(/\.(mp4|gif)$/i)) {
     try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper joel Tech" , gifPlayback : true }, { quoted: ms });
+        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" , gifPlayback : true }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
@@ -62,7 +63,7 @@ let menuMsg = `
 // Vérification pour .jpeg ou .png
 else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
     try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper joel Tech" }, { quoted: ms });
+        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Beltahmd*, déveloper Beltah Tech" }, { quoted: ms });
     }
     catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
